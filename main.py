@@ -104,7 +104,7 @@ def listar_contas(contas):
 
 def main():
     limite_saques = 4
-    AGENCIA = "0001"
+    agencia = "0001"
 
     saldo = 0
     limite = 500
@@ -141,7 +141,7 @@ def main():
 
         elif opcao == "5":
             numero_conta = len(contas) + 1
-            conta = criar_conta(AGENCIA, numero_conta, usuarios)
+            conta = criar_conta(agencia, numero_conta, usuarios)
 
             if conta:
                 contas.append(conta)
